@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        /* Common styles for both pages */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: #f1f7fe; /* Match signup background */
+        }
+
+        .form-box {
+            max-width: 300px;
+            background: #ffffff;
+            overflow: hidden;
+            border-radius: 16px;
+            color: #010101;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 32px 24px; /* Add padding for consistency */
+            text-align: center;
+        }
+
+        /* Form text */
+        .title {
+            font-weight: bold;
+            font-size: 1.6rem;
+        }
+
+        .subtitle {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 16px; /* Add margin for spacing */
+        }
+
+        /* Inputs box */
+        .form-container {
+            width: 100%;
+            margin: 1rem 0 .5rem;
+        }
+
+        .input {
+            background: none;
+            border: 0;
+            outline: 0;
+            height: 40px;
+            width: 100%;
+            border-bottom: 1px solid #eee;
+            font-size: .9rem;
+            padding: 8px 15px;
+            margin-bottom: 15px; /* Add margin for spacing */
+        }
+
+        /* Button */
+        .form button {
+            background-color: #0066ff;
+            color: #fff;
+            border: 0;
+            border-radius: 24px;
+            padding: 10px 16px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color .3s ease;
+            width: 100%; /* Full width for buttons */
+            margin-top: 10px; /* Add margin for spacing */
+        }
+
+        .form button:hover {
+            background-color: #005ce6;
+        }
+
+        /* Separator */
+        .separator {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+        }
+
+        .separator hr {
+            flex: 1;
+            border: none;
+            height: 1px;
+            background-color: #e8e8e8;
+        }
+
+        .note {
+            font-size: 0.75rem;
+            color: #8B8E98;
+            text-decoration: underline;
+        }
+
+        /* Form section for links */
+        .form-section {
+            padding: 16px;
+            font-size: .85rem;
+            background-color: #e0ecfb;
+            box-shadow: rgb(0 0 0 / 8%) 0 -1px;
+        }
+
+        .form-section a {
+            font-weight: bold;
+            color: #0066ff;
+            transition: color .3s ease;
+        }
+
+        .form-section a:hover {
+            color: #005ce6;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-box">
+        <form class="form">
+           <br><div><span class="title">Login to your Account</span></div></br>
+            <div><span class="subtitle">Enter your credentials below.</span></div>
+            <div class="form-container">
+                <input type="text" id="email_field" class="input" placeholder="Email" required>
+                <input type="password" id="password_field" class="input" placeholder="Password" required>
+            </div>
+            <button type="submit">Sign In</button>
+            <div class="separator">
+                <hr><span>Or</span><hr>
+            </div>
+            <button type="button" class="sign-in_ggl">Sign In with Google</button>
+            <button type="button" class="sign-in_apl">Sign In with Apple</button>
+            <p class="note">Terms of use &amp; Conditions</p>
+        </form>
+        <div class="form-section">
+            <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+        </div>
+    </div>
+</body>
+</html>
